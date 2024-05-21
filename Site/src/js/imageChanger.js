@@ -10,6 +10,7 @@ setInterval(function () {
     document.getElementById("portfolio_img").src =
       "src/assets/imgs/" + allBackgrounds[cycle] + "";
     cycle += 1;
+    console.log(cycle);
   } else {
     cycle = 0;
   }
