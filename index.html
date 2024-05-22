@@ -22,13 +22,14 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/src/main.css" />
+    <link rel="stylesheet" href="/src/output.css" />
 
     <script
       src="https://kit.fontawesome.com/61838a8320.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body
     class="text-white bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
   >
@@ -38,11 +39,12 @@
       <li><a href="#sobre">Sobre nós</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#agendar">Agendar</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li
         class="flex items-center justify-center sm:justify-end w-[15%] ml-14 mt-10"
       >
-        <a target="_blank" href="https://abrir.link/OHyqe" class="main-cta">
+        <a target="_blank" href="https://abre.ai/whatsappnxt" class="main-cta">
           <i class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"></i>
           Contatar
           <i class="fa-brands fa-whatsapp w-8 h-8"></i>
@@ -71,19 +73,20 @@
         </div>
 
         <div class="menu flex gap-[3.5rem] items-center justify-center">
-          <ul
-            class="hidden sm:flex sm:flex-row sm:items-center sm:justify-center sm:bg-slate-100 sm:bg-opacity-5 sm:px-20 sm:py-4 sm:rounded-full sm:gap-9 sm:text-white backdrop-blur-lg sm:text-[1.4rem]"
-          >
-            <li class="ease-in-out transition duration-300 hover:scale-110">
+          <ul class="menu-list">
+            <li class="menu-items">
               <a href="#sobre" class="">Sobre nós</a>
             </li>
-            <li class="ease-in-out transition duration-300 hover:scale-110">
+            <li class="menu-items">
               <a href="#servicos">Serviços</a>
             </li>
-            <li class="ease-in-out transition duration-300 hover:scale-110">
+            <li class="menu-items">
               <a href="#portfolio">Portfólio</a>
             </li>
-            <li class="ease-in-out transition duration-300 hover:scale-110">
+            <li class="menu-items">
+              <a href="#agendar">Agendar</a>
+            </li>
+            <li class="menu-items">
               <a href="#faq">FAQ</a>
             </li>
           </ul>
@@ -94,9 +97,13 @@
         </div>
 
         <div
-          class="absolute top-[4rem] right-[50%] sm:static sm:flex items-center justify-center sm:justify-end w-[15%]"
+          class="hidden top-[4rem] right-[50%] sm:static sm:flex items-center justify-center sm:justify-end w-[15%]"
         >
-          <a target="_blank" href="https://abrir.link/OHyqe" class="main-cta">
+          <a
+            target="_blank"
+            href="https://abre.ai/whatsappnxt"
+            class="main-cta"
+          >
             <i class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"></i>
             Contatar
             <i class="fa-brands fa-whatsapp w-8 h-8"></i>
@@ -203,9 +210,7 @@
           </p>
         </div>
         <div class="w-full grid h-fit sm:flex gap-10">
-          <div
-            class="w-full sm:w-[33%] min-h-full px-9 py-8 flex flex-row gap-7 bg-slate-100 bg-opacity-[0.04] rounded-2xl border-[0.009rem] border-white border-opacity-20"
-          >
+          <div class="sb-items">
             <div class="">
               <i class="fa-solid fa-rocket"></i>
             </div>
@@ -218,9 +223,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="w-full sm:w-[33%] min-h-full px-9 py-8 flex flex-row gap-7 bg-slate-400 bg-opacity-[0.04] rounded-2xl border-[0.009rem] border-white border-opacity-20"
-          >
+          <div class="sb-items">
             <div class="">
               <i class="fa-solid fa-binoculars"></i>
             </div>
@@ -233,9 +236,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="w-full sm:w-[33%] min-h-full px-9 py-8 flex flex-row gap-7 bg-slate-400 bg-opacity-[0.04] rounded-2xl border-[0.009rem] border-white border-opacity-20"
-          >
+          <div class="sb-items">
             <div class="">
               <i class="fa-solid fa-heart"></i>
             </div>
@@ -249,7 +250,7 @@
             </div>
           </div>
         </div>
-        <a href="" class="main-cta self-center">Tenho interesse!</a>
+        <a href="#agendar" class="main-cta self-center">Tenho interesse!</a>
       </div>
     </div>
 
@@ -310,10 +311,14 @@
                 class="w-full h-[50rem] sm:h-full overflow-hidden border-[0.1rem] border-opacity-20 border-[#dddddd] rounded-[1.5rem] row-span-2 row-start-6 sm:row-start-1 sm:col-start-3"
               >
                 <img
-                  class="w-full h-full object-none object-[50%_-100px] sm:object-[50%_-100px]"
-                  src="/src/assets/imgs/_4230ec2f-3edc.jpeg"
+                  class="w-full h-full object-cover"
+                  src="/src/assets/imgs/4230ec2f-3edca.webp"
                   alt="Imagem de Foguete Decolando"
                 />
+                <span
+                  class="absolute ml-5 sm:ml-10 -mt-8 sm:-mt-16 text-[0.6rem] sm:text-[1rem]"
+                  >Gerado por IA</span
+                >
               </div>
               <div
                 class="w-full h-fit xl:h-[40rem] py-[4rem] px-[3rem] bg-slate-200 bg-opacity-5 border-[0.1rem] border-opacity-10 border-[#dddddd] rounded-[1.5rem]"
@@ -345,7 +350,7 @@
             </div>
             <a
               target="_blank"
-              href="https://abrir.link/OHyqe"
+              href="https://abre.ai/whatsappnxt"
               class="main-cta mt-4 sm:mt-[-10rem] px-[5rem]"
             >
               Contatar
@@ -356,52 +361,74 @@
       </div>
     </div>
 
-    <a id="portfolio" class="block invisible relative top-[-140px]"></a>
+    <a class="block invisible relative top-[-140px]"></a>
 
     <!-- Seção Portfólio -->
-    <div
-      class="port-container w-full h-fit flex justify-center my-40 sm:mt-[20rem] sm:mb-32 bg-neutral px-10 md:px-16"
-    >
+    <div id="portfolio" class="w-full h-[80vh] flex items-center">
       <div
-        class="w-content h-fit py-10 sm:py-0 sm:h-[41vh] flex flex-col-reverse sm:flex-row items-center sm:justify-between"
+        class="port-container w-full h-fit flex justify-center bg-neutral px-10 md:px-16"
       >
-        <div class="h-fit w-full sm:w-[40%] flex flex-col gap-14">
-          <h2
-            class="tr-title text-center sm:text-left text-[2rem] sm:text-[3rem] font-semibold"
-          >
-            Veja como a NXT Digital trabalha 👨‍💻
-          </h2>
-          <p class="sm:text-[1.6rem] text-[1.2rem]">
-            Visite agora nosso porfólio e veja se nossos projetos se alinham com
-            a identidade de sua empresa ou serviço.
-          </p>
-          <a
-            target="_blank"
-            href="https://abrir.link/OHsuU"
-            class="main-cta self-center sm:self-start"
-          >
-            Ir para o Portfólio
-            <i
-              class="fa-solid fa-up-right-from-square w-5 h-5 sm:w-8 sm:h-8"
-            ></i>
-          </a>
-        </div>
-        <div class="h-fit w-full sm:max-w-[50%] mt-[-8rem] sm:mt-[-1rem]">
-          <div>
-            <img
-              id="portfolio_img"
-              class="scale-[85%] sm:scale-100 duration-300 ease-in-out"
-              src="/src/assets/imgs/portfolio_preview.webp"
-              alt="Projetos do Portfólio"
-            />
+        <div
+          class="w-content h-fit py-10 sm:py-0 sm:h-[41vh] flex flex-col-reverse sm:flex-row items-center sm:justify-between"
+        >
+          <div class="h-fit w-full sm:w-[40%] flex flex-col gap-14">
+            <h2
+              class="text-center sm:text-left text-[2rem] sm:text-[3rem] font-semibold"
+            >
+              Veja como a NXT Digital trabalha 👨‍💻
+            </h2>
+            <p class="text-[1.2rem] sm:text-[1.6rem]">
+              Visite agora nosso porfólio e veja se nossos projetos se alinham
+              com a identidade de sua empresa ou serviço.
+            </p>
+            <a
+              target="_blank"
+              href="https://abre.ai/nxtportfolio"
+              class="main-cta self-center sm:self-start"
+            >
+              Ir para o Portfólio
+              <i
+                class="fa-solid fa-up-right-from-square w-5 h-5 sm:w-8 sm:h-8"
+              ></i>
+            </a>
+          </div>
+          <div class="h-fit w-full sm:max-w-[50%] mt-[-8rem] sm:mt-[-1rem]">
+            <div>
+              <img
+                id="portfolio_img"
+                class="scale-[85%] sm:scale-100 duration-300 ease-in-out"
+                src="/src/assets/imgs/portfolio_preview.webp"
+                alt="Projetos do Portfólio"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Widget em linha do Calendly - início -->
+    <div id="agendar" class="w-full h-[100vh] pt-20">
+      <div class="flex justify-center mb-16 sm:mb-0">
+        <h1 class="text-[2rem] sm:text-[3rem] font-semibold">
+          Agende uma Reunião
+        </h1>
+      </div>
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/genilson8818/30min?hide_gdpr_banner=1&background_color=161616&text_color=ffffff&primary_color=f97316"
+        style="min-width: 320px; height: 700px"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      ></script>
+    </div>
+    <!-- Widget em linha do Calendly - fim -->
+
     <!-- Seção FAQ -->
-    <div id="faq" class="w-full flex h-fit justify-center">
-      <div class="container w-content h-fit my-10 md:my-20 px-10">
+    <div id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
+      <div class="container w-content h-fit py-10 md:py-20 px-10">
         <h2
           class="faq-text text-center text-[3rem] font-bold tracking-widest int-titles"
         >
@@ -410,9 +437,7 @@
         <ul class="w-full mx-auto mt-14 md:mt-10 divide-y flex flex-col gap-5">
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
                 <h3>O que é a NXT Digital?</h3>
               </summary>
@@ -429,9 +454,7 @@
           </li>
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
                 <h3>Como a minha empresa pode se beneficiar?</h3>
               </summary>
@@ -447,9 +470,7 @@
           </li>
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
                 <h3>Como funciona o processo de desenvolvimento de sites?</h3>
               </summary>
@@ -469,9 +490,7 @@
           </li>
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
                 <h3>
                   Quais são as vantagens de investir em anúncios pagos (Google
@@ -495,9 +514,7 @@
           </li>
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
                 <h3>Como a NXT mede o sucesso das campanhas?</h3>
               </summary>
@@ -517,11 +534,9 @@
           </li>
           <li>
             <details class="group">
-              <summary
-                class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
-              >
+              <summary class="faq-items">
                 <i class="acc-item fa-solid fa-chevron-right"></i>
-                <h3>Qual é o custo dos serviços da NXT?</h3>
+                <h3>Qual são os custos de serviços da NXT?</h3>
               </summary>
               <article class="px-4 pb-4">
                 <p>
@@ -535,7 +550,7 @@
                 </p>
                 <a
                   target="_blank"
-                  href="https://abrir.link/OHyqe"
+                  href="https://abre.ai/nxtcalendly"
                   class="main-cta mt-10"
                   >Clique aqui!</a
                 >
@@ -548,7 +563,7 @@
 
     <!-- Rodapé -->
     <div
-      class="w-full h-fit py-6 flex justify-center items-center mt-[10rem] bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
+      class="w-full h-fit py-6 flex justify-center items-center bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
     >
       <div
         class="container w-content flex flex-col items-center md:flex-row sm:justify-between gap-5 px-10"

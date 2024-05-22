@@ -45,8 +45,24 @@ body {
   @apply flex flex-col border-none sm:border-current h-fit w-content px-10 pt-24 pb-14 sm:py-20 gap-20 sm:rounded-[2rem] bg-dark_gray sm:bg-opacity-95 backdrop-blur-lg;
 }
 
+.sb-items {
+  @apply w-full sm:w-[33%] min-h-full px-9 py-8 flex flex-row gap-7 bg-slate-100 bg-opacity-[0.04] rounded-2xl border-[0.009rem] border-white border-opacity-20;
+}
+
+.menu-list {
+  @apply hidden sm:flex sm:flex-row sm:items-center sm:justify-center sm:bg-slate-100 sm:bg-opacity-5 sm:px-20 sm:py-4 sm:rounded-full sm:gap-9 sm:text-white backdrop-blur-lg sm:text-[1.4rem];
+}
+
+.menu-items {
+  @apply ease-in-out transition duration-300 hover:scale-110;
+}
+
 .acc-item {
   @apply w-5 h-5 text-gray-500 transition group-open:rotate-90;
+}
+
+.faq-items {
+  @apply flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer;
 }
 
 .int-titles-scnd {
@@ -62,7 +78,7 @@ body {
 }
 
 .up-btn {
-  @apply w-20 h-20 sm:w-14 sm:h-14 bg-dark_gray rounded-full flex fixed right-10 bottom-12 justify-center items-center hover:cursor-pointer sm:hover:scale-110 transition duration-300 ease-in-out z-30;
+  @apply w-20 h-20 sm:w-16 sm:h-16 bg-dark_gray rounded-full flex fixed right-10 bottom-12 justify-center items-center hover:cursor-pointer sm:hover:scale-110 transition duration-300 ease-in-out z-30;
 }
 
 @media (max-width: 800px) {
