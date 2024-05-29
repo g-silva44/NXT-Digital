@@ -27,9 +27,7 @@ module.exports = {
         title_paragraph: ["2rem"],
       },
 
-      screens: {
-        sm: "800px",
-      },
+      screens: {},
     },
   },
   plugins: [],
