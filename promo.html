@@ -57,7 +57,9 @@
     </ul>
 
     <!-- Menu Desktop -->
-    <nav class="sm:flex sm:justify-center w-full bg-dark_gray">
+    <nav
+      class="sm:flex sm:justify-center w-full bg-dark_gray animate slide-top-to-down"
+    >
       <div
         class="sm:w-content px-12 sm:h-[12vh] md:flex md:flex-row md:justify-between"
       >
@@ -116,15 +118,16 @@
       class="flex justify-center items-center w-full h-[100vh] bg-[url(/src/assets/svgs/s_bg_3.svg)] bg-cover bg-no-repeat"
     >
       <div class="banner-pattern text-center mb-60 animate slide">
-        <h1 class="text-h1 font-bold drop-shadow-lg">
+        <h1 class="text-h1 font-bold">
           No lançamento da NXT, você quem ganha!
         </h1>
         <p class="text-[1.4rem] lg:text-title_paragraph text-center">
           Agora, ao contratar o plano anual de Gestão de Tráfego, a
           criação/redesign do seu site fica por nossa conta! Aproveite, pois é
           por tempo limitado. Para saber mais, agende agora uma reunião.
-          <br /><span class="text-[3rem]">👇</span>
+          <br />
         </p>
+        <span class="text-[5rem] animate down">👇</span>
       </div>
     </section>
 
@@ -148,10 +151,11 @@
       <!-- Widget em linha do Calendly - fim -->
     </section>
 
+    <!-- Seção Utilidades -->
     <section class="w-full min-h-[100vh] flex justify-center pb-60">
       <div class="w-content flex flex-col gap-40">
         <div class="">
-          <div class="flex gap-20 relative">
+          <div class="flex flex-col sm:flex-row gap-20 relative">
             <img
               src="/src/assets/imgs/5676a311-4793.webp"
               alt="Uma imagem de alta qualidade mostrando um empresário(a) confiante sentado em uma mesa de escritório moderna, olhando para uma tela de computador
@@ -179,7 +183,7 @@
           </div>
         </div>
         <div class="">
-          <div class="flex flex-row-reverse gap-20 relative">
+          <div class="flex flex-col sm:flex-row-reverse gap-20 relative">
             <img
               src="/src/assets/imgs/1f7e4d3a5c.webp"
               alt="Uma imagem de um site em uma tela de smartphone e tablet, ambos mostrando a mesma landing page de design moderno e responsivo."
@@ -224,7 +228,7 @@
           </div>
         </div>
         <div class="">
-          <div class="flex gap-20 relative">
+          <div class="flex flex-col sm:flex-row gap-20 relative">
             <img
               src="/src/assets/imgs/b7adb5f7.webp"
               alt="Uma imagem de um analista de marketing digital de pé em frente a um grande monitor de parede, apontando para gráficos e dados de performance em tempo real."
@@ -248,16 +252,57 @@
                 empresa em destaque. Com técnicas precisas de segmentação,
                 garantimos que seu site receba visitantes realmente interessados
                 nos seus produtos ou serviços, aumentando a taxa de conversão.
-                Nossas estratégias garantirão que você obtenha os melhores
-                resultados possíveis, mês após mês.
               </p>
+              <a href="#agendar" class="main-cta mt-5 sm:mt-10">
+                Tenho interesse
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="h-[100vh] bg-dark_gray"></section>
+    <section
+      class="w-full h-[100vh] bg-dark_gray flex flex-col justify-center items-center gap-32"
+    >
+      <h1 class="text-h1">
+        Sobre a <strong class="int-titles">NXT Digital</strong>
+      </h1>
+      <div
+        class="max-w-content w-full h-fit flex flex-col sm:flex-row items-center"
+      >
+        <div
+          class="max-w-[50rem] w-fit max-h-[50rem] h-full bg-slate-200 rounded-full overflow-hidden z-10 animate pulse"
+        >
+          <img
+            src="/src/assets/imgs/nxt_logo.webp"
+            class="object-cover w-full"
+            alt=""
+          />
+        </div>
+        <div
+          class="sm:w-full h-full sm:h-[53rem] sm:ml-[-52rem] rounded-l-full rounded-r-full from-[#0c0c0c] to-neutral bg-gradient-to-l relative flex justify-end items-center overflow-hidden border-[0.1rem] border-opacity-15 border-[#999]"
+        >
+          <img
+            src="/src/assets/svgs/bd_bg_mobile.svg"
+            alt="Div Background"
+            class="object-cover absolute w-full h-full"
+          />
+          <div
+            class="w-[40%] h-full mr-40 pr-32 py-32 flex flex-col gap-20 z-10"
+          >
+            <i class="w-fit fa-solid fa-hashtag text-[8rem]"></i>
+            <p class="text-[1.2rem] sm:text-[1.8rem]">
+              Na <strong>NXT Digital</strong>, estamos comprometidos com o
+              sucesso do seu negócio. Oferecemos soluções completas de marketing
+              digital, focadas em resultados concretos. Com nossa expertise,
+              você terá a garantia de estar sempre à frente da concorrência.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Seção FAQ -->
     <section id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
