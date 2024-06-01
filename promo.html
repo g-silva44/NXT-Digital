@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estamos com uma super promoção de lançamento: Na contratação do plano anual de Tráfego Pago, ganhe a criação/adaptação de seu site GRATUITAMENTE. 
+      Aqui criamos Landing Pages, Conteúdo para Redes Sociais e Gestão de Tráfego Inteligente."
+    />
+    <meta
+      name="keywords"
+      content="Marketing Agência, Marketing Digital,Landing Page,Social Media,Tráfego Pago"
+    />
+    <meta name="author" content="NXT Digital Agência de Marketing" />
+    <title>NXT Digital - Promoção de Lançamento</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/output.css" />
+
+    <script
+      src="https://kit.fontawesome.com/61838a8320.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
+  >
+    <!-- Menu celular-->
+    <ul onclick="hideSideBar();" class="sidebar">
+      <li class="menu-items">
+        <a href="./index.html" class="">Início</a>
+      </li>
+      <li class="menu-items">
+        <a href="#beneficios">Benefícios</a>
+      </li>
+      <li class="menu-items">
+        <a href="#sobrenos">Sobre Nós</a>
+      </li>
+      <li class="menu-items">
+        <a href="#faq">FAQ</a>
+      </li>
+      <li
+        class="flex items-center justify-center sm:justify-end w-[15%] ml-14 mt-10"
+      >
+        <a target="_blank" href="https://abre.ai/whatsappnxt" class="main-cta">
+          <i class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"></i>
+          Contatar
+          <i class="fa-brands fa-whatsapp w-8 h-8"></i>
+        </a>
+      </li>
+      <i
+        onclick="hideSideBar(); this.style.display='none'"
+        class="w-10 h-10 sm:hidden fixed top-[4.5rem] left-[80%] fa-solid fa-xmark z-[60]"
+      ></i>
+    </ul>
+
+    <!-- Menu Desktop -->
+    <nav
+      class="sm:flex sm:justify-center w-full bg-dark_gray animate md:slide-top-to-down"
+    >
+      <div
+        class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
+      >
+        <div class="sm:w-[15%] h-[10vh] flex items-center">
+          <a href="#"
+            ><img
+              class="w-[6rem] sm:w-[7rem]"
+              src="/src/assets/svgs/nxt_logo.svg"
+              alt="Site Logo"
+              srcset=""
+            />
+          </a>
+        </div>
+        <div class="menu flex gap-[3.5rem] items-center justify-center">
+          <ul class="menu-list">
+            <li class="menu-items">
+              <a href="./index.html" class="">Início</a>
+            </li>
+            <li class="menu-items">
+              <a href="#beneficios">Benefícios</a>
+            </li>
+            <li class="menu-items">
+              <a href="#sobrenos">Sobre Nós</a>
+            </li>
+            <li class="menu-items">
+              <a href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <i
+            onclick="showSideBar(); this.style.display='none'"
+            class="nav-bars w-10 h-10 md:hidden fixed top-[4.5rem] left-[90%] fa-solid fa-bars z-50"
+          ></i>
+        </div>
+
+        <div
+          class="hidden top-[4rem] right-[50%] md:static md:flex items-center justify-center md:justify-end w-[15%]"
+        >
+          <a
+            target="_blank"
+            href="https://abre.ai/whatsappnxt"
+            class="main-cta"
+          >
+            <i class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"></i>
+            Contatar
+            <i class="fa-brands fa-whatsapp w-8 h-8"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Botão voltar para cima -->
+    <a href="#" class="up-btn">
+      <i class="fa-solid fa-chevron-up text-white"></i>
+    </a>
+
+    <!-- Banner -->
+    <section
+      class="flex justify-center items-center w-full h-[100vh] bg-[url(/src/assets/svgs/s_bg_3.svg)] bg-cover bg-no-repeat"
+    >
+      <div class="banner-pattern text-center mb-60 animate slide">
+        <h1 class="text-h1 font-bold">
+          No lançamento da NXT, você quem ganha!
+        </h1>
+        <p class="text-[1.4rem] lg:text-title_paragraph text-center">
+          Agora, ao contratar o plano anual de Gestão de Tráfego, a
+          criação/redesign do seu site fica por nossa conta! Aproveite, pois é
+          por tempo <strong>limitado</strong>. Para saber mais, agende agora uma
+          reunião.
+          <br />
+        </p>
+        <span class="sm:text-[5rem] text-[3rem] animate down">👇</span>
+      </div>
+    </section>
+
+    <section class="w-full h-[100vh] px-10">
+      <!-- Widget em linha do Calendly - início -->
+      <div
+        id="agendar"
+        class="w-full h-[100vh] pt-20 -mt-[30rem] lg:-mt-[40rem]"
+      >
+        <div
+          class="calendly-inline-widget overflow-hidden rounded-3xl"
+          data-url="https://calendly.com/genilson8818/30min?hide_gdpr_banner=1&background_color=161616&text_color=ffffff&primary_color=f97316"
+          style="min-width: 320px; height: 700px"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </div>
+      <!-- Widget em linha do Calendly - fim -->
+    </section>
+
+    <!-- Seção Beneficios -->
+    <section
+      id="beneficios"
+      class="w-full min-h-[100vh] flex justify-center pb-60"
+    >
+      <div class="lg:w-content px-10 flex flex-col gap-40">
+        <div class="">
+          <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden"
+            >
+              <img
+                src="/src/assets/imgs/5676a311-4793.webp"
+                alt="Uma imagem de alta qualidade mostrando um empresário(a) confiante sentado em uma mesa de escritório moderna, olhando para uma tela de computador
+                com gráficos de análise de tráfego e conversões visíveis."
+                srcset=""
+                width="full"
+                class=""
+              />
+              <span
+                class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
+
+            <div class="container flex flex-col gap-8 lg:mt-48">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
+                Invista no Sucesso da Sua Empresa
+              </h1>
+              <p class="text-[1.2rem] sm:text-[1.6rem]">
+                Ao assinar nosso plano anual de gestão de tráfego, você não
+                apenas garante um fluxo contínuo de visitantes qualificados para
+                o seu site, mas também ganha a criação ou redesign de seu site
+                de página única (Landing Page), totalmente gratuita.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex flex-col lg:flex-row-reverse gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden lg:-mt-52 promo-div-img"
+            >
+              <img
+                src="/src/assets/imgs/1f7e4d3a5c.webp"
+                alt="Uma imagem de um site em uma tela de smartphone e tablet, ambos mostrando a mesma landing page de design moderno e responsivo."
+                srcset=""
+                width="full"
+              />
+              <span
+                class="absolute right-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
+            <div class="container flex flex-col gap-8">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
+                Como será minha Landing Page
+              </h1>
+
+              <ul class="lp-items px-10">
+                <li class="">
+                  <p class="text-[1.2rem] sm:text-[1.6rem]">
+                    Criaremos uma Landing Page visualmente atraente e alinhada
+                    com a identidade da sua marca, garantindo uma experiência
+                    positiva para os usuários
+                  </p>
+                </li>
+                <li>
+                  <p class="text-[1.2rem] sm:text-[1.6rem]">
+                    cada elemento é cuidadosamente planejado para maximizar as
+                    conversões, desde a chamada para ação até o layout intuitivo
+                    e amigável.
+                  </p>
+                </li>
+                <li>
+                  <p class="text-[1.2rem] sm:text-[1.6rem]">
+                    Sua Landing Page será completamente responsiva,
+                    proporcionando uma navegação perfeita em dispositivos
+                    móveis, tablets e desktops.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex flex-col lg:flex-row gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden lg:-mt-40 promo-div-img"
+            >
+              <img
+                src="/src/assets/imgs/b7adb5f7.webp"
+                alt="Uma imagem de um analista de marketing digital de pé em frente a um grande monitor de parede, apontando para gráficos e dados de performance em tempo real."
+                srcset=""
+                width="full"
+              />
+              <span
+                class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
+            <div class="container flex flex-col gap-8">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
+                Como será a gestão de tráfego do meu Site
+              </h1>
+              <p class="text-[1.2rem] sm:text-[1.6rem]">
+                Nosso plano de gestão de tráfego utiliza estratégias avançadas
+                de <strong>SEO</strong>, <strong>PPC</strong> eMarketing de
+                Conteúdo <strong>Marketing de Conteúdo</strong> para colocar sua
+                empresa em destaque. Com técnicas precisas de segmentação,
+                garantimos que seu site receba visitantes realmente interessados
+                nos seus produtos ou serviços, aumentando a taxa de conversão.
+              </p>
+              <a href="#agendar" class="main-cta mt-5 sm:mt-10">
+                Tenho interesse
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section
+      id="sobrenos"
+      class="w-full h-fit xl:min-h-[100vh] bg-dark_gray flex flex-col justify-center items-center gap-32 py-24 md:py-52"
+    >
+      <h1 class="md:text-h1 text-[2.5rem]">
+        Sobre a <strong class="int-titles">NXT Digital</strong>
+      </h1>
+      <div
+        class="sm:max-w-content sm:w-full w-full flex flex-col xl:flex-row items-center"
+      >
+        <div
+          class="max-w-[25rem] max-h-[25rem] lg:max-w-[36rem] lg:max-h-[36rem] xl:max-w-[50rem] xl:max-h-[50rem] w-full h-full bg-slate-200 rounded-full overflow-hidden z-10 animate pulse"
+        >
+          <img
+            src="/src/assets/imgs/nxt_logo.webp"
+            class="object-cover w-full"
+            alt=""
+          />
+        </div>
+        <div
+          class="xl:w-full w-[30rem] lg:w-[39rem] h-fit py-60 xl:h-[53rem] mt-[-27rem] lg:mt-[-38rem] xl:mt-0 xl:ml-[-52rem] rounded-l-full rounded-r-full from-[#0c0c0c] to-neutral bg-gradient-to-t xl:bg-gradient-to-l relative flex justify-center sm:justify-end items-center overflow-hidden border-[0.1rem] border-opacity-15 border-[#999]"
+        >
+          <img
+            src="/src/assets/svgs/bd_bg_mobile.svg"
+            alt="Div Background"
+            class="object-cover absolute w-[full] h-full"
+          />
+          <div
+            class="w-full px-12 lg:px-20 mt-60 lg:mt-[26rem] xl:mt-0 xl:px-0 xl:w-[40%] xl:mr-[10%] xl:pr-[5%] xl:py-32 flex flex-col gap-10 xl:gap-20 z-10"
+          >
+            <i
+              class="w-fit fa-solid fa-hashtag text-[4rem] lg:text-[6rem] xl:text-[8rem]"
+            ></i>
+            <p class="text-[1.2rem] sm:text-[1.8rem]">
+              Na <strong>NXT Digital</strong>, estamos comprometidos com o
+              sucesso do seu negócio. Oferecemos soluções completas de marketing
+              digital, focadas em resultados concretos. Com nossa expertise,
+              você terá a garantia de estar sempre à frente da concorrência.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
+      <div class="container w-content h-fit py-10 md:py-20 px-10">
+        <h2
+          class="faq-text text-center text-[3rem] font-bold tracking-widest int-titles"
+        >
+          FAQ
+        </h2>
+        <ul class="w-full mx-auto mt-14 md:mt-10 divide-y flex flex-col gap-5">
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>
+                  O que está incluído no plano anual de gestão de tráfego?
+                </h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Nosso plano inclui estratégias avançadas de SEO, campanhas de
+                  PPC, marketing de conteúdo, análise contínua de desempenho e
+                  relatórios mensais detalhados para garantir que você obtenha o
+                  melhor retorno sobre seu investimento.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>
+                  Como funciona a promoção de criação ou redesign da landing
+                  page?
+                </h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Ao assinar , você ganha uma criação ou redesign de landing
+                  page sem custos adicionais. Após a confirmação da assinatura,
+                  nossa equipe entrará em contato para iniciar o processo e
+                  alinhar os detalhes do design conforme suas necessidades.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>Qual é o prazo para a criação da landing page gratuita?</h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Após a confirmação da assinatura do plano anual, a criação ou
+                  redesign da sua landing page será concluída em até 15 dias
+                  úteis, dependendo da complexidade do projeto e da rapidez com
+                  que você fornecer o conteúdo necessário.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>O que preciso fornecer para a criação da landing page?</h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Precisamos que você forneça o conteúdo textual, imagens,
+                  logotipo da sua empresa e qualquer outra informação relevante
+                  que deseje incluir. Nossa equipe fornecerá um briefing
+                  detalhado para facilitar esse processo.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>Posso personalizar o design da minha landing page?</h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Sim, nossa equipe trabalhará com você para criar uma landing
+                  page personalizada que atenda às suas preferências de estilo e
+                  identidade visual da sua marca. Você terá a oportunidade de
+                  revisar e aprovar o design antes da finalização.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary class="faq-items">
+                <i class="acc-item fa-solid fa-chevron-right"></i>
+                <h3>
+                  O que acontece se eu não estiver satisfeito com o design da
+                  landing page?
+                </h3>
+              </summary>
+              <article class="px-4 pb-4">
+                <p>
+                  Nossa prioridade é garantir sua satisfação. Durante o processo
+                  de criação, você terá a oportunidade de fornecer feedback e
+                  solicitar ajustes. Faremos até duas rodadas de revisões para
+                  garantir que o design final atenda às suas expectativas.
+                </p>
+              </article>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <section
+      class="w-full h-fit py-6 flex justify-center items-center bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
+    >
+      <div
+        class="container w-content flex flex-col items-center md:flex-row sm:justify-between gap-5 px-10"
+      >
+        <p class="w-fit text-center sm:text-start">
+          © 2024 Todos Direitos Reservados. Feito à mão por
+          <span class="font-bold">NXT Digital</span> 🖋️.
+        </p>
+        <div class="w-fit flex gap-4">
+          <a href=""><i class="fa-brands fa-instagram w-5 sm:w-10"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-f w-5 sm:w-10"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in w-5 sm:w-10"></i></a>
+          <a target="_blank" href="https://www.behance.net/codevd"
+            ><i class="fa-brands fa-behance w-5 sm:w-10"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/js/sidebarFunc.js"></script>
+  </body>
+</html>

@@ -31,11 +31,10 @@
   </head>
 
   <body
-    class="text-white bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
+    class="bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
   >
     <!-- Menu celular-->
     <ul onclick="hideSideBar();" class="sidebar">
-      <li><a href="#">Início</a></li>
       <li><a href="#sobre">Sobre nós</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#portfolio">Portfólio</a></li>
@@ -52,26 +51,46 @@
       </li>
       <i
         onclick="hideSideBar(); this.style.display='none'"
-        class="w-10 h-10 sm:hidden fixed top-[4.5rem] left-[80%] fa-solid fa-xmark z-[60]"
+        class="w-10 h-10 sm:hidden fixed top-[8rem] left-[80%] fa-solid fa-xmark z-[60]"
       ></i>
     </ul>
 
-    <!-- Menu Desktop -->
-    <nav class="sm:flex sm:justify-center w-full">
+    <!-- Div Anúncios -->
+    <div
+      class="sticky top-0 w-full h-fit bg-neutral bg-opacity-80 backdrop-blur-sm z-[200] animate"
+    >
       <div
-        class="sm:w-content px-12 sm:h-[12vh] sm:flex sm:flex-row sm:justify-between"
+        class="flex flex-row flex-nowrap justify-center items-center py-6 px-10 text-center"
       >
-        <div class="sm:w-[15%] h-[12vh] flex items-center">
+        <p class="tracking-wide text-[0.8rem] md:text-[1.4rem]">
+          <span class="font-semibold"
+            >🚀 PROMOÇÃO DE LANÇAMENTO NXT DIGITAL!</span
+          >
+          Na assinatura do plano anual de <strong>Gestão de Tráfego</strong>, a
+          re/criação de seu site fica
+          <strong class="ease-in-out animate-pulse">GRÁTIS</strong>!
+          <a target="_blank" href="./promo.html" class="font-semibold underline"
+            >Saiba mais</a
+          >!
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu Desktop -->
+    <nav class="sm:flex sm:justify-center w-full animate md:slide-top-to-down">
+      <div
+        class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
+      >
+        <div class="sm:w-[15%] h-[10vh] flex items-center">
           <a href="#"
             ><img
-              class="w-[6rem] sm:w-[8rem]"
+              class="w-[6rem] sm:w-[7rem]"
               src="/src/assets/svgs/nxt_logo.svg"
               alt="Site Logo"
               srcset=""
             />
           </a>
         </div>
-
         <div class="menu flex gap-[3.5rem] items-center justify-center">
           <ul class="menu-list">
             <li class="menu-items">
@@ -92,12 +111,12 @@
           </ul>
           <i
             onclick="showSideBar(); this.style.display='none'"
-            class="nav-bars w-10 h-10 sm:hidden fixed top-[4.5rem] left-[90%] fa-solid fa-bars z-50"
+            class="nav-bars w-10 h-10 md:hidden fixed top-[8rem] left-[90%] fa-solid fa-bars z-50"
           ></i>
         </div>
 
         <div
-          class="hidden top-[4rem] right-[50%] sm:static sm:flex items-center justify-center sm:justify-end w-[15%]"
+          class="hidden top-[4rem] right-[50%] md:static md:flex items-center justify-center md:justify-end w-[15%]"
         >
           <a
             target="_blank"
@@ -118,10 +137,8 @@
     </a>
 
     <!-- Banner -->
-    <div class="banner min-h-[50vh] sm:h-[70vh] flex justify-center">
-      <div
-        class="container max-w-content py-24 px-10 lg:px-0 flex flex-col justify-center items-center gap-14 sm:gap-20"
-      >
+    <section class="banner min-h-[50vh] sm:h-[70vh] flex justify-center">
+      <div class="banner-pattern animate slide">
         <h1
           class="text-[2.4rem] md:text-h1 text-center font-bold lg:tracking-widest"
         >
@@ -136,12 +153,12 @@
         </p>
         <a href="#servicos" class="main-cta"> Conheça nossos serviços </a>
       </div>
-    </div>
+    </section>
 
     <!-- Interseção -->
-    <div class="div-trns w-full flex justify-center mt-32 py-10 bg-black px-10">
+    <section class="w-full flex justify-center mt-32 py-10 bg-black px-10">
       <div
-        class="w-content h-fit sm:py-[5rem] sm:h-[20vh] flex flex-col sm:flex-row items-center justify-center"
+        class="w-content h-fit sm:py-[3rem] sm:min-h-[20vh] flex flex-col sm:flex-row items-center justify-center"
       >
         <div
           class="w-full sm:w-[32%] h-fit flex flex-col px-10 sm:pl-0 sm:pr-[2.5rem] py-[1.6rem] gap-6"
@@ -184,10 +201,10 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Seção Sobre nós -->
-    <div
+    <section
       id="sobre"
       class="min-h-[100vh] flex justify-center items-center w-full py-2 sm:py-20"
     >
@@ -252,10 +269,10 @@
         </div>
         <a href="#agendar" class="main-cta self-center">Tenho interesse!</a>
       </div>
-    </div>
+    </section>
 
     <!-- Seção Serviços -->
-    <div
+    <section
       id="servicos"
       class="min-h-[100vh] w-full py-20 px-10 flex flex-col items-center"
     >
@@ -359,12 +376,10 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <a class="block invisible relative top-[-140px]"></a>
+    </section>
 
     <!-- Seção Portfólio -->
-    <div id="portfolio" class="w-full h-[80vh] flex items-center">
+    <section id="portfolio" class="w-full h-[80vh] flex items-center">
       <div
         class="port-container w-full h-fit flex justify-center bg-neutral px-10 md:px-16"
       >
@@ -404,17 +419,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Widget em linha do Calendly - início -->
-    <div id="agendar" class="w-full h-[100vh] pt-20">
+    <div id="agendar" class="w-full h-[100vh] pt-20 px-10">
       <div class="flex justify-center mb-16 sm:mb-0">
         <h1 class="text-[2rem] sm:text-[3rem] font-semibold">
           Agende uma Reunião
         </h1>
       </div>
       <div
-        class="calendly-inline-widget"
+        class="calendly-inline-widget overflow-hidden rounded-3xl"
         data-url="https://calendly.com/genilson8818/30min?hide_gdpr_banner=1&background_color=161616&text_color=ffffff&primary_color=f97316"
         style="min-width: 320px; height: 700px"
       ></div>
@@ -427,7 +442,7 @@
     <!-- Widget em linha do Calendly - fim -->
 
     <!-- Seção FAQ -->
-    <div id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
+    <section id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
       <div class="container w-content h-fit py-10 md:py-20 px-10">
         <h2
           class="faq-text text-center text-[3rem] font-bold tracking-widest int-titles"
@@ -559,10 +574,10 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <!-- Rodapé -->
-    <div
+    <section
       class="w-full h-fit py-6 flex justify-center items-center bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
     >
       <div
@@ -578,7 +593,7 @@
           <a href=""><i class="fa-brands fa-linkedin-in w-5 sm:w-10"></i></a>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="/src/js/sidebarFunc.js"></script>
     <script src="/src/js/imageChanger.js"></script>
