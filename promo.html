@@ -35,12 +35,18 @@
   >
     <!-- Menu celular-->
     <ul onclick="hideSideBar();" class="sidebar">
-      <li><a href="./index.html">Início</a></li>
-      <li><a href="#sobre">Sobre nós</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
-      <li><a href="#agendar">Agendar</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li class="menu-items">
+        <a href="./index.html" class="">Início</a>
+      </li>
+      <li class="menu-items">
+        <a href="#beneficios">Benefícios</a>
+      </li>
+      <li class="menu-items">
+        <a href="#sobrenos">Sobre Nós</a>
+      </li>
+      <li class="menu-items">
+        <a href="#faq">FAQ</a>
+      </li>
       <li
         class="flex items-center justify-center sm:justify-end w-[15%] ml-14 mt-10"
       >
@@ -58,35 +64,31 @@
 
     <!-- Menu Desktop -->
     <nav
-      class="sm:flex sm:justify-center w-full bg-dark_gray animate slide-top-to-down"
+      class="sm:flex sm:justify-center w-full bg-dark_gray animate md:slide-top-to-down"
     >
       <div
-        class="sm:w-content px-12 sm:h-[12vh] md:flex md:flex-row md:justify-between"
+        class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
       >
-        <div class="sm:w-[15%] h-[12vh] flex items-center">
+        <div class="sm:w-[15%] h-[10vh] flex items-center">
           <a href="#"
             ><img
-              class="w-[6rem] sm:w-[8rem]"
+              class="w-[6rem] sm:w-[7rem]"
               src="/src/assets/svgs/nxt_logo.svg"
               alt="Site Logo"
               srcset=""
             />
           </a>
         </div>
-
         <div class="menu flex gap-[3.5rem] items-center justify-center">
           <ul class="menu-list">
             <li class="menu-items">
               <a href="./index.html" class="">Início</a>
             </li>
             <li class="menu-items">
-              <a href="#servicos">Serviços</a>
+              <a href="#beneficios">Benefícios</a>
             </li>
             <li class="menu-items">
-              <a href="#portfolio">Portfólio</a>
-            </li>
-            <li class="menu-items">
-              <a href="#agendar">Agendar</a>
+              <a href="#sobrenos">Sobre Nós</a>
             </li>
             <li class="menu-items">
               <a href="#faq">FAQ</a>
@@ -114,6 +116,12 @@
       </div>
     </nav>
 
+    <!-- Botão voltar para cima -->
+    <a href="#" class="up-btn">
+      <i class="fa-solid fa-chevron-up text-white"></i>
+    </a>
+
+    <!-- Banner -->
     <section
       class="flex justify-center items-center w-full h-[100vh] bg-[url(/src/assets/svgs/s_bg_3.svg)] bg-cover bg-no-repeat"
     >
@@ -124,21 +132,22 @@
         <p class="text-[1.4rem] lg:text-title_paragraph text-center">
           Agora, ao contratar o plano anual de Gestão de Tráfego, a
           criação/redesign do seu site fica por nossa conta! Aproveite, pois é
-          por tempo limitado. Para saber mais, agende agora uma reunião.
+          por tempo <strong>limitado</strong>. Para saber mais, agende agora uma
+          reunião.
           <br />
         </p>
-        <span class="text-[5rem] animate down">👇</span>
+        <span class="sm:text-[5rem] text-[3rem] animate down">👇</span>
       </div>
     </section>
 
-    <section class="w-full h-[100vh]">
+    <section class="w-full h-[100vh] px-10">
       <!-- Widget em linha do Calendly - início -->
       <div
         id="agendar"
         class="w-full h-[100vh] pt-20 -mt-[30rem] lg:-mt-[40rem]"
       >
         <div
-          class="calendly-inline-widget overflow-hidden"
+          class="calendly-inline-widget overflow-hidden rounded-3xl"
           data-url="https://calendly.com/genilson8818/30min?hide_gdpr_banner=1&background_color=161616&text_color=ffffff&primary_color=f97316"
           style="min-width: 320px; height: 700px"
         ></div>
@@ -151,26 +160,34 @@
       <!-- Widget em linha do Calendly - fim -->
     </section>
 
-    <!-- Seção Utilidades -->
-    <section class="w-full min-h-[100vh] flex justify-center pb-60">
-      <div class="w-content flex flex-col gap-40">
+    <!-- Seção Beneficios -->
+    <section
+      id="beneficios"
+      class="w-full min-h-[100vh] flex justify-center pb-60"
+    >
+      <div class="lg:w-content px-10 flex flex-col gap-40">
         <div class="">
-          <div class="flex flex-col sm:flex-row gap-20 relative">
-            <img
-              src="/src/assets/imgs/5676a311-4793.webp"
-              alt="Uma imagem de alta qualidade mostrando um empresário(a) confiante sentado em uma mesa de escritório moderna, olhando para uma tela de computador
-              com gráficos de análise de tráfego e conversões visíveis."
-              srcset=""
-              width="500rem"
-              class="promo-div-img"
-            />
-            <span
-              class="absolute left-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
-              >Gerado por IA</span
+          <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden"
             >
-            <div class="container flex flex-col gap-8 mt-48">
-              <hr width="50%" />
-              <h1 class="text-[3rem] font-semibold int-titles">
+              <img
+                src="/src/assets/imgs/5676a311-4793.webp"
+                alt="Uma imagem de alta qualidade mostrando um empresário(a) confiante sentado em uma mesa de escritório moderna, olhando para uma tela de computador
+                com gráficos de análise de tráfego e conversões visíveis."
+                srcset=""
+                width="full"
+                class=""
+              />
+              <span
+                class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
+
+            <div class="container flex flex-col gap-8 lg:mt-48">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
                 Invista no Sucesso da Sua Empresa
               </h1>
               <p class="text-[1.2rem] sm:text-[1.6rem]">
@@ -183,25 +200,28 @@
           </div>
         </div>
         <div class="">
-          <div class="flex flex-col sm:flex-row-reverse gap-20 relative">
-            <img
-              src="/src/assets/imgs/1f7e4d3a5c.webp"
-              alt="Uma imagem de um site em uma tela de smartphone e tablet, ambos mostrando a mesma landing page de design moderno e responsivo."
-              srcset=""
-              width="500rem"
-              class="-mt-52 promo-div-img"
-            />
-            <span
-              class="absolute right-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
-              >Gerado por IA</span
+          <div class="flex flex-col lg:flex-row-reverse gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden lg:-mt-52 promo-div-img"
             >
+              <img
+                src="/src/assets/imgs/1f7e4d3a5c.webp"
+                alt="Uma imagem de um site em uma tela de smartphone e tablet, ambos mostrando a mesma landing page de design moderno e responsivo."
+                srcset=""
+                width="full"
+              />
+              <span
+                class="absolute right-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
             <div class="container flex flex-col gap-8">
-              <hr width="50%" />
-              <h1 class="text-[3rem] font-semibold int-titles">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
                 Como será minha Landing Page
               </h1>
 
-              <ul class="lp-items">
+              <ul class="lp-items px-10">
                 <li class="">
                   <p class="text-[1.2rem] sm:text-[1.6rem]">
                     Criaremos uma Landing Page visualmente atraente e alinhada
@@ -228,21 +248,24 @@
           </div>
         </div>
         <div class="">
-          <div class="flex flex-col sm:flex-row gap-20 relative">
-            <img
-              src="/src/assets/imgs/b7adb5f7.webp"
-              alt="Uma imagem de um analista de marketing digital de pé em frente a um grande monitor de parede, apontando para gráficos e dados de performance em tempo real."
-              srcset=""
-              width="500rem"
-              class="-mt-40 promo-div-img"
-            />
-            <span
-              class="absolute left-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
-              >Gerado por IA</span
+          <div class="flex flex-col lg:flex-row gap-20 relative">
+            <div
+              class="relative self-center max-w-[70rem] max-h-[70rem] w-fit h-fit promo-div-img overflow-hidden lg:-mt-40 promo-div-img"
             >
+              <img
+                src="/src/assets/imgs/b7adb5f7.webp"
+                alt="Uma imagem de um analista de marketing digital de pé em frente a um grande monitor de parede, apontando para gráficos e dados de performance em tempo real."
+                srcset=""
+                width="full"
+              />
+              <span
+                class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"
+                >Gerado por IA</span
+              >
+            </div>
             <div class="container flex flex-col gap-8">
-              <hr width="50%" />
-              <h1 class="text-[3rem] font-semibold int-titles">
+              <hr width="100%" class="lg:w-[50%]" />
+              <h1 class="text-[2.4rem] lg:text-[3rem] font-semibold int-titles">
                 Como será a gestão de tráfego do meu Site
               </h1>
               <p class="text-[1.2rem] sm:text-[1.6rem]">
@@ -262,17 +285,19 @@
       </div>
     </section>
 
+    <!-- Sobre Nós -->
     <section
-      class="w-full h-[100vh] bg-dark_gray flex flex-col justify-center items-center gap-32"
+      id="sobrenos"
+      class="w-full h-fit xl:min-h-[100vh] bg-dark_gray flex flex-col justify-center items-center gap-32 py-24 md:py-52"
     >
-      <h1 class="text-h1">
+      <h1 class="md:text-h1 text-[2.5rem]">
         Sobre a <strong class="int-titles">NXT Digital</strong>
       </h1>
       <div
-        class="max-w-content w-full h-fit flex flex-col sm:flex-row items-center"
+        class="sm:max-w-content sm:w-full w-full flex flex-col xl:flex-row items-center"
       >
         <div
-          class="max-w-[50rem] w-fit max-h-[50rem] h-full bg-slate-200 rounded-full overflow-hidden z-10 animate pulse"
+          class="max-w-[25rem] max-h-[25rem] lg:max-w-[36rem] lg:max-h-[36rem] xl:max-w-[50rem] xl:max-h-[50rem] w-full h-full bg-slate-200 rounded-full overflow-hidden z-10 animate pulse"
         >
           <img
             src="/src/assets/imgs/nxt_logo.webp"
@@ -281,17 +306,19 @@
           />
         </div>
         <div
-          class="sm:w-full h-full sm:h-[53rem] sm:ml-[-52rem] rounded-l-full rounded-r-full from-[#0c0c0c] to-neutral bg-gradient-to-l relative flex justify-end items-center overflow-hidden border-[0.1rem] border-opacity-15 border-[#999]"
+          class="xl:w-full w-[30rem] lg:w-[39rem] h-fit py-60 xl:h-[53rem] mt-[-27rem] lg:mt-[-38rem] xl:mt-0 xl:ml-[-52rem] rounded-l-full rounded-r-full from-[#0c0c0c] to-neutral bg-gradient-to-t xl:bg-gradient-to-l relative flex justify-center sm:justify-end items-center overflow-hidden border-[0.1rem] border-opacity-15 border-[#999]"
         >
           <img
             src="/src/assets/svgs/bd_bg_mobile.svg"
             alt="Div Background"
-            class="object-cover absolute w-full h-full"
+            class="object-cover absolute w-[full] h-full"
           />
           <div
-            class="w-[40%] h-full mr-40 pr-32 py-32 flex flex-col gap-20 z-10"
+            class="w-full px-12 lg:px-20 mt-60 lg:mt-[26rem] xl:mt-0 xl:px-0 xl:w-[40%] xl:mr-[10%] xl:pr-[5%] xl:py-32 flex flex-col gap-10 xl:gap-20 z-10"
           >
-            <i class="w-fit fa-solid fa-hashtag text-[8rem]"></i>
+            <i
+              class="w-fit fa-solid fa-hashtag text-[4rem] lg:text-[6rem] xl:text-[8rem]"
+            ></i>
             <p class="text-[1.2rem] sm:text-[1.8rem]">
               Na <strong>NXT Digital</strong>, estamos comprometidos com o
               sucesso do seu negócio. Oferecemos soluções completas de marketing
@@ -436,6 +463,9 @@
           <a href=""><i class="fa-brands fa-instagram w-5 sm:w-10"></i></a>
           <a href=""><i class="fa-brands fa-facebook-f w-5 sm:w-10"></i></a>
           <a href=""><i class="fa-brands fa-linkedin-in w-5 sm:w-10"></i></a>
+          <a target="_blank" href="https://www.behance.net/codevd"
+            ><i class="fa-brands fa-behance w-5 sm:w-10"></i
+          ></a>
         </div>
       </div>
     </section>

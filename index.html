@@ -51,7 +51,7 @@
       </li>
       <i
         onclick="hideSideBar(); this.style.display='none'"
-        class="w-10 h-10 sm:hidden fixed top-[4.5rem] left-[80%] fa-solid fa-xmark z-[60]"
+        class="w-10 h-10 sm:hidden fixed top-[8rem] left-[80%] fa-solid fa-xmark z-[60]"
       ></i>
     </ul>
 
@@ -77,21 +77,20 @@
     </div>
 
     <!-- Menu Desktop -->
-    <nav class="sm:flex sm:justify-center w-full">
+    <nav class="sm:flex sm:justify-center w-full animate md:slide-top-to-down">
       <div
-        class="sm:w-content px-12 sm:h-[12vh] md:flex md:flex-row md:justify-between"
+        class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
       >
-        <div class="sm:w-[15%] h-[12vh] flex items-center">
+        <div class="sm:w-[15%] h-[10vh] flex items-center">
           <a href="#"
             ><img
-              class="w-[6rem] sm:w-[8rem]"
+              class="w-[6rem] sm:w-[7rem]"
               src="/src/assets/svgs/nxt_logo.svg"
               alt="Site Logo"
               srcset=""
             />
           </a>
         </div>
-
         <div class="menu flex gap-[3.5rem] items-center justify-center">
           <ul class="menu-list">
             <li class="menu-items">
@@ -112,7 +111,7 @@
           </ul>
           <i
             onclick="showSideBar(); this.style.display='none'"
-            class="nav-bars w-10 h-10 md:hidden fixed top-[4.5rem] left-[90%] fa-solid fa-bars z-50"
+            class="nav-bars w-10 h-10 md:hidden fixed top-[8rem] left-[90%] fa-solid fa-bars z-50"
           ></i>
         </div>
 
@@ -423,14 +422,14 @@
     </section>
 
     <!-- Widget em linha do Calendly - início -->
-    <div id="agendar" class="w-full h-[100vh] pt-20">
+    <div id="agendar" class="w-full h-[100vh] pt-20 px-10">
       <div class="flex justify-center mb-16 sm:mb-0">
         <h1 class="text-[2rem] sm:text-[3rem] font-semibold">
           Agende uma Reunião
         </h1>
       </div>
       <div
-        class="calendly-inline-widget"
+        class="calendly-inline-widget overflow-hidden rounded-3xl"
         data-url="https://calendly.com/genilson8818/30min?hide_gdpr_banner=1&background_color=161616&text_color=ffffff&primary_color=f97316"
         style="min-width: 320px; height: 700px"
       ></div>
