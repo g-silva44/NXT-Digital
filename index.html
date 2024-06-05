@@ -15,6 +15,21 @@
     <meta name="author" content="NXT Digital Agência de Marketing" />
     <title>NXT Digital - Marketing de Resultados!</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DXGD7JCR6H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DXGD7JCR6H");
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -331,6 +346,7 @@
                   class="w-full h-full object-cover"
                   src="/src/assets/imgs/4230ec2f-3edca.webp"
                   alt="Imagem de Foguete Decolando"
+                  loading="lazy"
                 />
                 <span
                   class="absolute ml-5 sm:ml-10 -mt-8 sm:-mt-16 text-[0.6rem] sm:text-[1rem]"
@@ -414,6 +430,7 @@
                 class="scale-[85%] sm:scale-100 duration-300 ease-in-out"
                 src="/src/assets/imgs/portfolio_preview.webp"
                 alt="Projetos do Portfólio"
+                loading="lazy"
               />
             </div>
           </div>
@@ -422,7 +439,7 @@
     </section>
 
     <!-- Widget em linha do Calendly - início -->
-    <div id="agendar" class="w-full h-[100vh] pt-20 px-10">
+    <div id="agendar" class="w-full h-fit sm:h-[100vh] pt-20 px-10">
       <div class="flex justify-center mb-16 sm:mb-0">
         <h1 class="text-[2rem] sm:text-[3rem] font-semibold">
           Agende uma Reunião

@@ -16,6 +16,21 @@
     <meta name="author" content="NXT Digital Agência de Marketing" />
     <title>NXT Digital - Promoção de Lançamento</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DXGD7JCR6H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DXGD7JCR6H");
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,14 +73,12 @@
       </li>
       <i
         onclick="hideSideBar(); this.style.display='none'"
-        class="w-10 h-10 sm:hidden fixed top-[4.5rem] left-[80%] fa-solid fa-xmark z-[60]"
+        class="w-10 h-10 sm:hidden fixed top-[3.5rem] left-[80%] fa-solid fa-xmark z-[60]"
       ></i>
     </ul>
 
     <!-- Menu Desktop -->
-    <nav
-      class="sm:flex sm:justify-center w-full bg-dark_gray animate md:slide-top-to-down"
-    >
+    <nav class="sm:flex sm:justify-center w-full bg-dark_gray animate">
       <div
         class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
       >
@@ -96,7 +109,7 @@
           </ul>
           <i
             onclick="showSideBar(); this.style.display='none'"
-            class="nav-bars w-10 h-10 md:hidden fixed top-[4.5rem] left-[90%] fa-solid fa-bars z-50"
+            class="nav-bars w-10 h-10 md:hidden fixed top-[3.5rem] left-[90%] fa-solid fa-bars z-50"
           ></i>
         </div>
 
@@ -177,7 +190,7 @@
                 com gráficos de análise de tráfego e conversões visíveis."
                 srcset=""
                 width="full"
-                class=""
+                loading="lazy"
               />
               <span
                 class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"
@@ -209,6 +222,7 @@
                 alt="Uma imagem de um site em uma tela de smartphone e tablet, ambos mostrando a mesma landing page de design moderno e responsivo."
                 srcset=""
                 width="full"
+                loading="lazy"
               />
               <span
                 class="absolute right-10 bottom-5 sm:bottom-10 text-[0.6rem] sm:text-[1rem]"
@@ -257,6 +271,7 @@
                 alt="Uma imagem de um analista de marketing digital de pé em frente a um grande monitor de parede, apontando para gráficos e dados de performance em tempo real."
                 srcset=""
                 width="full"
+                loading="lazy"
               />
               <span
                 class="absolute sm:left-10 sm:bottom-10 bottom-5 right-10 text-[0.6rem] sm:text-[1rem]"

@@ -691,6 +691,10 @@ video {
   top: -140px;
 }
 
+.top-\[3\.5rem\] {
+  top: 3.5rem;
+}
+
 .top-\[4\.5rem\] {
   top: 4.5rem;
 }
@@ -4036,6 +4040,10 @@ body {
 
   .sm\:h-8 {
     height: 2rem;
+  }
+
+  .sm\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .sm\:h-\[10vh\] {
