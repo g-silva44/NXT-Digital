@@ -77,6 +77,8 @@
       ></i>
     </ul>
 
+    <a id="inicio" class="absolute top-0"></a>
+
     <!-- Menu Desktop -->
     <nav class="sm:flex sm:justify-center w-full bg-dark_gray animate">
       <div
@@ -95,16 +97,16 @@
         <div class="menu flex gap-[3.5rem] items-center justify-center">
           <ul class="menu-list">
             <li class="menu-items">
-              <a href="./index.html" class="">Início</a>
+              <a href="https://nxtdigitalagency.rf.gd">Início</a>
             </li>
             <li class="menu-items">
-              <a href="#beneficios">Benefícios</a>
+              <a onclick="scrollToSection(event, 'beneficios')">Benefícios</a>
             </li>
             <li class="menu-items">
-              <a href="#sobrenos">Sobre Nós</a>
+              <a onclick="scrollToSection(event, 'sobrenos')">Sobre Nós</a>
             </li>
             <li class="menu-items">
-              <a href="#faq">FAQ</a>
+              <a onclick="scrollToSection(event, 'faq')">FAQ</a>
             </li>
           </ul>
           <i
@@ -291,7 +293,10 @@
                 garantimos que seu site receba visitantes realmente interessados
                 nos seus produtos ou serviços, aumentando a taxa de conversão.
               </p>
-              <a href="#agendar" class="main-cta mt-5 sm:mt-10">
+              <a
+                onclick="scrollToSection(event, 'agendar')"
+                class="main-cta mt-5 sm:mt-10"
+              >
                 Tenho interesse
               </a>
             </div>
@@ -487,5 +492,6 @@
 
     <script src="/src/js/sidebarFunc.js"></script>
     <script src="/src/js/bckToTopBtn.js"></script>
+    <script src="/src/js/scrollToSection.js"></script>
   </body>
 </html>
