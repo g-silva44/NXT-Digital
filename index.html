@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -43,6 +43,8 @@
       src="https://kit.fontawesome.com/61838a8320.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
   </head>
 
   <body
@@ -70,7 +72,7 @@
       ></i>
     </ul>
 
-    <!-- Div Anúncios -->
+    <!-- Div Anúncios
     <div
       class="sticky top-0 w-full h-fit bg-neutral bg-opacity-80 backdrop-blur-sm z-[200] animate"
     >
@@ -89,61 +91,7 @@
           >!
         </p>
       </div>
-    </div>
-
-    <!-- Menu Desktop -->
-    <nav class="sm:flex sm:justify-center w-full animate md:slide-top-to-down">
-      <div
-        class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
-      >
-        <div class="sm:w-[15%] h-[10vh] flex items-center">
-          <img
-            src="/src/assets/svgs/nxt_logo.svg"
-            alt="Site Logo"
-            srcset=""
-            width="60px"
-            height="70px"
-          />
-        </div>
-        <div class="menu flex gap-[3.5rem] items-center justify-center">
-          <ul class="menu-list">
-            <li class="menu-items">
-              <a onclick="scrollToSection(event, 'sobre')">Sobre nós</a>
-            </li>
-            <li class="menu-items">
-              <a onclick="scrollToSection(event, 'servicos')">Serviços</a>
-            </li>
-            <li class="menu-items">
-              <a onclick="scrollToSection(event, 'portfolio')">Portfólio</a>
-            </li>
-            <li class="menu-items">
-              <a onclick="scrollToSection(event, 'agendar')">Agendar</a>
-            </li>
-            <li class="menu-items">
-              <a onclick="scrollToSection(event, 'faq')">FAQ</a>
-            </li>
-          </ul>
-          <i
-            onclick="showSideBar(); this.style.display='none'"
-            class="nav-bars w-10 h-10 md:hidden fixed top-[8rem] left-[90%] fa-solid fa-bars z-50"
-          ></i>
-        </div>
-
-        <div
-          class="hidden top-[4rem] right-[50%] md:static md:flex items-center justify-center md:justify-end w-[15%]"
-        >
-          <a
-            target="_blank"
-            href="https://abre.ai/whatsappnxt"
-            class="main-cta"
-          >
-            <i class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"></i>
-            Contatar
-            <i class="fa-brands fa-whatsapp w-8 h-8"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
+    </div> -->
 
     <!-- Botão voltar para cima -->
     <a class="back-to-top up-btn" id="backToTopBtn">
@@ -151,28 +99,130 @@
     </a>
 
     <!-- Banner -->
-    <section class="banner min-h-[50vh] sm:h-[70vh] flex justify-center">
-      <div class="banner-pattern animate slide">
-        <h1
-          class="text-[2.4rem] md:text-h1 text-center font-bold lg:tracking-widest"
+    <section
+      class="banner section min-h-[50vh] sm:h-[87rem] flex justify-center items-center overflow-hidden"
+    >
+      <!-- Menu Desktop -->
+      <nav
+        class="sm:flex sm:justify-center w-full animate md:slide-top-to-down absolute top-0"
+      >
+        <div
+          class="sm:w-content px-12 sm:h-[10vh] md:flex md:flex-row md:justify-between"
         >
-          Conectamos sua empresa aos seus clientes de forma prática e eficiente!
-        </h1>
-        <p class="text-[1.4rem] lg:text-title_paragraph text-center">
-          Somos uma agência focada na qualidade de entrega e satisfação.
-          Utilizamos o poder da
-          <span class="int-titles font-bold">TECNOLOGIA</span> e
-          <span class="int-titles font-bold">COMUNICAÇÃO</span> para alavancar
-          empresas no digital e obter resultados sólidos.
-        </p>
-        <a onclick="scrollToSection(event, 'servicos')" class="main-cta">
-          Conheça nossos serviços
-        </a>
+          <div class="sm:w-[15%] h-[10vh] flex items-center">
+            <img
+              src="/src/assets/svgs/nxt_logo.svg"
+              alt="Site Logo"
+              srcset=""
+              width="60px"
+              height="70px"
+            />
+          </div>
+          <div class="menu flex gap-[3.5rem] items-center justify-center">
+            <ul class="menu-list">
+              <li class="menu-items">
+                <a onclick="scrollToSection(event, 'sobre')">Sobre nós</a>
+              </li>
+              <li class="menu-items">
+                <a onclick="scrollToSection(event, 'servicos')">Serviços</a>
+              </li>
+              <li class="menu-items">
+                <a onclick="scrollToSection(event, 'portfolio')">Portfólio</a>
+              </li>
+              <li class="menu-items">
+                <a onclick="scrollToSection(event, 'agendar')">Agendar</a>
+              </li>
+              <li class="menu-items">
+                <a onclick="scrollToSection(event, 'faq')">FAQ</a>
+              </li>
+            </ul>
+            <i
+              onclick="showSideBar(); this.style.display='none'"
+              class="nav-bars w-10 h-10 md:hidden fixed top-[8rem] left-[90%] fa-solid fa-bars z-50"
+            ></i>
+          </div>
+
+          <div
+            class="hidden top-[4rem] right-[50%] md:static md:flex items-center justify-center md:justify-end w-[15%]"
+          >
+            <a
+              target="_blank"
+              href="https://abre.ai/whatsappnxt"
+              class="main-cta"
+            >
+              <i
+                class="fa-solid fa-circle w-5 h-5 animate-pulse duration-50"
+              ></i>
+              Contatar
+              <i class="fa-brands fa-whatsapp w-8 h-8"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="max-w-content h-fit w-full flex items-center justify-between relative"
+      >
+        <div
+          class="container py-24 px-10 lg:px-0 flex flex-col justify-center items-start gap-14 sm:gap-20 max-w-[63.2rem] animate slide"
+        >
+          <h1
+            class="text-[3.8rem] md:text-h1 font-light lg:tracking-wider uppercase"
+          >
+            Conectamos sua empresa aos seus clientes de forma
+            <span class="font-semibold">prática</span> e
+            <span class="font-semibold">eficiente</span>!
+          </h1>
+          <p class="text-[1.4rem] lg:text-title_paragraph font-light">
+            Somos uma agência focada na qualidade de entrega e satisfação.
+            Utilizamos o poder da
+            <span class="int-titles font-bold">TECNOLOGIA</span> e
+            <span class="int-titles font-bold">COMUNICAÇÃO</span> para alavancar
+            empresas no digital e obter resultados sólidos.
+          </p>
+          <div class="flex gap-[6rem] items-center">
+            <button
+              class="main-cta"
+              onclick="scrollToSection(event, 'servicos')"
+            >
+              Conheça Nossos Serviços
+            </button>
+            <div class="flex gap-[2.5rem] text-[3.5rem]">
+              <a
+                class="fa-brands fa-behance banner-links"
+                href="https://www.behance.net/codevd"
+                target="_blank"
+                rel="author"
+              ></a
+              ><a
+                class="fa-brands fa-linkedin banner-links"
+                href="https://www.instagram.com/gsilva.dsnr"
+                target="_blank"
+                rel="author"
+              ></a
+              ><a
+                class="fa-brands fa-instagram banner-links"
+                href="https://abrir.link/DYxaX"
+                target="_blank"
+                rel="author"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Tag -->
+        <div
+          class="absolute rounded-text -top-10 -right-32 w-[16rem] h-[16rem] flex justify-center items-center rounded-full p-2"
+        >
+          <span class="font-extrabold text-[8rem] font-sans int-titles absolute"
+            >N</span
+          >
+          <img src="src/assets/imgs/rounded_text.png" alt="" srcset="" />
+        </div>
       </div>
     </section>
 
     <!-- Interseção -->
-    <section class="w-full flex justify-center mt-32 py-10 bg-black px-10">
+    <section class="section w-full flex justify-center py-10 bg-black px-10">
       <div
         class="w-content h-fit sm:py-[3rem] sm:min-h-[20vh] flex flex-col sm:flex-row items-center justify-center"
       >
@@ -222,7 +272,7 @@
     <!-- Seção Sobre nós -->
     <section
       id="sobre"
-      class="min-h-[100vh] flex justify-center items-center w-full py-2 sm:py-20"
+      class="section min-h-[100vh] flex justify-center items-center w-full py-2 sm:py-20"
     >
       <div class="sb-div">
         <div class="flex flex-col gap-3">
@@ -294,7 +344,7 @@
     <!-- Seção Serviços -->
     <section
       id="servicos"
-      class="min-h-[100vh] w-full py-20 px-10 flex flex-col items-center"
+      class="section min-h-[100vh] w-full py-20 px-10 flex flex-col items-center"
     >
       <div class="container sm:w-content h-full flex flex-col gap-10">
         <h1
@@ -400,9 +450,9 @@
     </section>
 
     <!-- Seção Portfólio -->
-    <section id="portfolio" class="w-full h-[80vh] flex items-center">
+    <section id="portfolio" class="section w-full h-[80vh] flex items-center">
       <div
-        class="port-container w-full h-fit flex justify-center bg-neutral px-10 md:px-16"
+        class="section port-container w-full h-fit flex justify-center bg-neutral px-10 md:px-16"
       >
         <div
           class="w-content h-fit py-10 sm:py-0 sm:h-[41vh] flex flex-col-reverse sm:flex-row items-center sm:justify-between"
@@ -411,7 +461,7 @@
             <h2
               class="text-center sm:text-left text-[2rem] sm:text-[3rem] font-semibold"
             >
-              Veja como a NXT Digital trabalha 👨‍💻
+              Veja a NXT Digital em ação 👨‍💻
             </h2>
             <p class="text-[1.2rem] sm:text-[1.6rem]">
               Visite agora nosso porfólio e veja se nossos projetos se alinham
@@ -444,7 +494,7 @@
     </section>
 
     <!-- Widget em linha do Calendly - início -->
-    <div id="agendar" class="w-full h-fit sm:h-[100vh] pt-20 px-10">
+    <section id="agendar" class="section w-full h-fit sm:h-[100vh] pt-20 px-10">
       <div class="flex justify-center mb-16 sm:mb-0">
         <h1 class="text-[2rem] sm:text-[3rem] font-semibold">
           Agende uma Reunião
@@ -460,11 +510,14 @@
         src="https://assets.calendly.com/assets/external/widget.js"
         async
       ></script>
-    </div>
+    </section>
     <!-- Widget em linha do Calendly - fim -->
 
     <!-- Seção FAQ -->
-    <section id="faq" class="w-full flex h-fit justify-center bg-dark_gray">
+    <section
+      id="faq"
+      class="section w-full flex h-fit justify-center bg-dark_gray"
+    >
       <div class="container w-content h-fit py-10 md:py-20 px-10">
         <h2
           class="faq-text text-center text-[3rem] font-bold tracking-widest int-titles"
@@ -600,7 +653,7 @@
 
     <!-- Rodapé -->
     <section
-      class="w-full h-fit py-6 flex justify-center items-center bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
+      class="section w-full h-fit py-6 flex justify-center items-center bg-gradient-to-r from-red-500 to-orange-500 bg-opacity-50"
     >
       <div
         class="container w-content flex flex-col items-center md:flex-row sm:justify-between gap-5 px-10"
@@ -621,5 +674,6 @@
     <script src="/src/js/imageChanger.js"></script>
     <script src="/src/js/bckToTopBtn.js"></script>
     <script src="/src/js/scrollToSection.js"></script>
+    <script src="src/js/intersectionObs.js"></script>
   </body>
 </html>

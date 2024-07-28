@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#E30613",
-        secondary: "#005247",
+        secondary: "#F97316",
         neutral: "#252525",
         text: "#333",
         white: "#fff",
@@ -18,7 +18,7 @@ module.exports = {
       },
 
       spacing: {
-        content: ["115rem"],
+        content: ["130rem"],
       },
 
       fontSize: {
