@@ -61,10 +61,10 @@ body {
 
 .banner {
   overflow: hidden;
-  background-image: url("/src/assets/imgs/banner.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center center;
+  @apply bg-[url("/src/assets/imgs/banner_mobile.png")] sm:bg-[url("/src/assets/imgs/banner.png")];
 }
 
 .sb-items {
@@ -245,7 +245,7 @@ body {
     transform: scale(1, 1);
   }
   50% {
-    transform: scale(0.95, 0.95);
+    transform: scale(1.1, 1.1);
   }
   100% {
     transform: scale(1, 1);
@@ -257,7 +257,7 @@ body {
     transform: scale(1, 1);
   }
   50% {
-    transform: scale(0.95, 0.95);
+    transform: scale(1.1, 1.1);
   }
   100% {
     transform: scale(1, 1);

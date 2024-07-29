@@ -68,7 +68,7 @@
       </li>
       <i
         onclick="hideSideBar(); this.style.display='none'"
-        class="w-10 h-10 sm:hidden fixed top-[8rem] left-[80%] fa-solid fa-xmark z-[60]"
+        class="w-10 h-10 sm:hidden fixed top-[4rem] left-[80%] fa-solid fa-xmark z-[60]"
       ></i>
     </ul>
 
@@ -100,7 +100,7 @@
 
     <!-- Banner -->
     <section
-      class="banner section min-h-[50vh] sm:h-[87rem] flex justify-center items-center overflow-hidden"
+      class="banner section h-[100vh] sm:min-h-[50vh] sm:h-[87rem] flex justify-center items-start sm:items-center overflow-hidden"
     >
       <!-- Menu Desktop -->
       <nav
@@ -138,7 +138,7 @@
             </ul>
             <i
               onclick="showSideBar(); this.style.display='none'"
-              class="nav-bars w-10 h-10 md:hidden fixed top-[8rem] left-[90%] fa-solid fa-bars z-50"
+              class="nav-bars w-10 h-10 md:hidden fixed top-[4rem] left-[90%] fa-solid fa-bars z-50"
             ></i>
           </div>
 
@@ -161,13 +161,13 @@
       </nav>
 
       <div
-        class="max-w-content h-fit w-full flex items-center justify-between relative"
+        class="max-w-content h-fit w-full flex justify-start px-10 mt-36 md:mt-0"
       >
         <div
-          class="container py-24 px-10 lg:px-0 flex flex-col justify-center items-start gap-14 sm:gap-20 max-w-[63.2rem] animate slide"
+          class="container py-24 px-10 lg:px-0 flex flex-col justify-center items-center sm:items-start gap-14 sm:gap-20 w-full md:max-w-[63.2rem] animate slide"
         >
           <h1
-            class="text-[3.8rem] md:text-h1 font-light lg:tracking-wider uppercase"
+            class="text-[1.9rem] md:text-h1 font-light lg:tracking-wider uppercase"
           >
             Conectamos sua empresa aos seus clientes de forma
             <span class="font-semibold">prática</span> e
@@ -180,40 +180,44 @@
             <span class="int-titles font-bold">COMUNICAÇÃO</span> para alavancar
             empresas no digital e obter resultados sólidos.
           </p>
-          <div class="flex gap-[6rem] items-center">
+          <div
+            class="flex flex-col sm:flex-row gap-4 md:gap-[6rem] items-center self-start"
+          >
             <button
               class="main-cta"
               onclick="scrollToSection(event, 'servicos')"
             >
               Conheça Nossos Serviços
             </button>
-            <div class="flex gap-[2.5rem] text-[3.5rem]">
+            <div
+              class="flex gap-[2.5rem] text-[2rem] md:text-[3.5rem] self-start"
+            >
               <a
-                class="fa-brands fa-behance banner-links"
                 href="https://www.behance.net/codevd"
                 target="_blank"
                 rel="author"
-              ></a
-              ><a
-                class="fa-brands fa-linkedin banner-links"
+              >
+                <i class="fa-brands fa-behance banner-links"></i
+              ></a>
+              <a
                 href="https://www.instagram.com/gsilva.dsnr"
                 target="_blank"
                 rel="author"
-              ></a
-              ><a
-                class="fa-brands fa-instagram banner-links"
-                href="https://abrir.link/DYxaX"
-                target="_blank"
-                rel="author"
+                ><i class="fa-brands fa-linkedin banner-links"></i
+              ></a>
+              <a href="https://abrir.link/DYxaX" target="_blank" rel="author"
+                ><i class="fa-brands fa-instagram banner-links"></i
               ></a>
             </div>
           </div>
         </div>
+
         <!-- Tag -->
         <div
-          class="absolute rounded-text -top-10 -right-32 w-[16rem] h-[16rem] flex justify-center items-center rounded-full p-2"
+          class="absolute rounded-text bottom-72 right-24 md:top-80 md:right-[30rem] w-[8rem] h-[8rem] md:w-[12rem] md:h-[12rem] flex justify-center items-center rounded-full p-2"
         >
-          <span class="font-extrabold text-[8rem] font-sans int-titles absolute"
+          <span
+            class="font-extrabold text-[3.5rem] md:text-[6rem] font-sans int-titles absolute animate pulse"
             >N</span
           >
           <img src="src/assets/imgs/rounded_text.png" alt="" srcset="" />
@@ -274,7 +278,7 @@
       id="sobre"
       class="section min-h-[100vh] flex justify-center items-center w-full py-2 sm:py-20"
     >
-      <div class="sb-div">
+      <div class="sb-div sm:mx-10">
         <div class="flex flex-col gap-3">
           <h1
             class="text-center sm:text-start text-[2rem] sm:text-[4rem] text-white font-bold tracking-wide int-titles"
@@ -398,7 +402,7 @@
                 class="w-full h-[50rem] sm:h-full overflow-hidden border-[0.1rem] border-opacity-20 border-[#dddddd] rounded-[1.5rem] row-span-2 row-start-6 sm:row-start-1 sm:col-start-3"
               >
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover lg:hover:scale-105 transition duration-700 ease-in-out"
                   src="/src/assets/imgs/4230ec2f-3edca.webp"
                   alt="Imagem de Foguete Decolando"
                   loading="lazy"
@@ -663,9 +667,18 @@
           <span class="font-bold">NXT Digital</span> 🖋️.
         </p>
         <div class="w-fit flex gap-4">
-          <a href=""><i class="fa-brands fa-instagram w-5 sm:w-10"></i></a>
-          <a href=""><i class="fa-brands fa-facebook-f w-5 sm:w-10"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin-in w-5 sm:w-10"></i></a>
+          <a href="https://www.behance.net/codevd" target="_blank" rel="author"
+            ><i class="fa-brands fa-behance w-5 sm:w-10"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/gsilva.dsnr"
+            target="_blank"
+            rel="author"
+            ><i class="fa-brands fa-instagram w-5 sm:w-10"></i
+          ></a>
+          <a href="https://abrir.link/DYxaX" target="_blank" rel="author"
+            ><i class="fa-brands fa-linkedin-in w-5 sm:w-10"></i
+          ></a>
         </div>
       </div>
     </section>
