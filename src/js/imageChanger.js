@@ -1,4 +1,4 @@
-var cycle = 1;
+var cycle = 0;
 var allImages = [
   "portfolio_preview_2.webp",
   "portfolio_preview_3.webp",
