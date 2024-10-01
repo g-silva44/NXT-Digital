@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -45,9 +45,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body
-    class="bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
-  >
+  <body>
     <!-- Menu celular-->
     <ul onclick="hideSideBar();" class="sidebar">
       <li class="menu-items">
@@ -131,20 +129,41 @@
       </div>
     </nav>
 
-    <!-- Botão voltar para cima -->
-    <a class="back-to-top up-btn" id="backToTopBtn">
-      <i class="fa-solid fa-chevron-up text-white"></i>
-    </a>
+    <!-- Balões -->
+    <div
+      class="flex flex-col-reverse sm:flex-row-reverse justify-center items-center fixed right-10 bottom-8 sm:bottom-12 gap-7 sm:gap-10 z-30 animate"
+    >
+      <!-- Botão voltar para cima -->
+      <a class="back-to-top up-btn" id="backToTopBtn">
+        <i class="fa-solid fa-chevron-up text-white"></i>
+      </a>
+      <!-- Botão Whatsapp -->
+      <a
+        class="back-to-top wp-btn"
+        href="https://abre.ai/whatsappnxt"
+        target="_blank"
+      >
+        <span
+          class="flex justify-center items-center px-2 py-2 sm:px-7 sm:py-3 sm:gap-5 text-[1.4rem]"
+          ><p class="hidden sm:block">Fale conosco no Whatsapp!</p>
+          <i
+            class="fa-brands fa-whatsapp text-white text-[2.5rem] sm:w-10 sm:h-10"
+          ></i
+        ></span>
+      </a>
+    </div>
 
     <!-- Banner -->
     <section
       class="flex justify-center items-center w-full h-[100vh] bg-[url(/src/assets/svgs/s_bg_3.svg)] bg-cover bg-no-repeat"
     >
-      <div class="banner-pattern text-center mb-60 animate slide">
-        <h1 class="text-h1 font-bold">
+      <div class="text-center mb-60 animate slide px-10">
+        <h1 class="text-[2.5rem] sm:text-h1 font-bold">
           No lançamento da NXT, você quem ganha!
         </h1>
-        <p class="text-[1.4rem] lg:text-title_paragraph text-center">
+        <p
+          class="text-[1.4rem] lg:text-title_paragraph text-center max-w-[80rem] mt-6"
+        >
           Agora, ao contratar o plano anual de Gestão de Tráfego, a
           criação/redesign do seu site fica por nossa conta! Aproveite, pois é
           por tempo <strong>limitado</strong>. Para saber mais, agende agora uma

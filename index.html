@@ -47,9 +47,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
   </head>
 
-  <body
-    class="bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)]"
-  >
+  <body>
     <!-- Menu celular-->
     <ul onclick="hideSideBar();" class="sidebar z-[2000]">
       <li><a onclick="scrollToSection(event, 'sobre')">Sobre nós</a></li>
@@ -72,31 +70,29 @@
       ></i>
     </ul>
 
-    <!-- Div Anúncios
+    <!-- Balões -->
     <div
-      class="sticky top-0 w-full h-fit bg-neutral bg-opacity-80 backdrop-blur-sm z-[200] animate"
+      class="flex flex-col-reverse sm:flex-row-reverse justify-center items-center fixed right-10 bottom-8 sm:bottom-12 gap-7 sm:gap-10 z-30 animate"
     >
-      <div
-        class="flex flex-row flex-nowrap justify-center items-center py-6 px-10 text-center"
+      <!-- Botão voltar para cima -->
+      <a class="back-to-top up-btn" id="backToTopBtn">
+        <i class="fa-solid fa-chevron-up text-white"></i>
+      </a>
+      <!-- Botão Whatsapp -->
+      <a
+        class="back-to-top wp-btn"
+        href="https://abre.ai/whatsappnxt"
+        target="_blank"
       >
-        <p class="tracking-wide text-[0.8rem] md:text-[1.4rem]">
-          <span class="font-semibold"
-            >🚀 PROMOÇÃO DE LANÇAMENTO NXT DIGITAL!</span
-          >
-          Na assinatura do plano anual de <strong>Gestão de Tráfego</strong>, a
-          re/criação de seu site fica
-          <strong class="ease-in-out animate-pulse">GRÁTIS</strong>!
-          <a target="_blank" href="./promo.html" class="font-semibold underline"
-            >Saiba mais</a
-          >!
-        </p>
-      </div>
-    </div> -->
-
-    <!-- Botão voltar para cima -->
-    <a class="back-to-top up-btn" id="backToTopBtn">
-      <i class="fa-solid fa-chevron-up text-white"></i>
-    </a>
+        <span
+          class="flex justify-center items-center px-2 py-2 sm:px-7 sm:py-3 sm:gap-5 text-[1.4rem]"
+          ><p class="hidden sm:block">Fale conosco no Whatsapp!</p>
+          <i
+            class="fa-brands fa-whatsapp text-white text-[2.5rem] sm:w-10 sm:h-10"
+          ></i
+        ></span>
+      </a>
+    </div>
 
     <!-- Banner -->
     <section
