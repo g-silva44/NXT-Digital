@@ -3080,6 +3080,7 @@ body {
   font-size: 1.6rem;
   color: white;
   background-color: #0c0c0c;
+  overflow-x: hidden;
   background-image: url(/src/assets/svgs/bd_bg_mobile.svg);
 }
 

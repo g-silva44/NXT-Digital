@@ -18,6 +18,7 @@ body {
   font-size: 1.6rem;
   color: white;
   background-color: #0c0c0c;
+  overflow-x: hidden;
   @apply bg-[url(/src/assets/svgs/bd_bg_mobile.svg)] lg:bg-[url(/src/assets/svgs/bd_bg.svg)];
 }
 
